@@ -10,9 +10,21 @@
   </head>
   <body>
     <div class="container">
-      <form class="" action="index.html" method="post">
-
+      <div class="jumbotron">
+        <h1>Beep Boop</h1>
+      </div>
+      <form id="beepboop">
+        <label for="inputNumber">Enter a number for see if you get a surprise result:</label>
+        <input type="number" id="userInputNumber" class="form-control"></input>
+        <button type="submit" name="button" class="btn btn-success">Submit!</button>
+        <p><span class="outputResult">Here's your results:<br></p>
       </form>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="userResult">
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
