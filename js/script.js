@@ -2,14 +2,16 @@ var beepboop = function(userInput) {
 var resultsArray = [];
 
 for (var i=0; i<=userInput; i++) {
-    if (i.toString().includes("1")) {
+    if (i.toString().includes('1')) {
       resultsArray.push("Beep!");
-    } else if (i.toString().includes("2")) {
-      resultsArray.push("Boop!");
+    } else if (i.toString().includes('2')) {
+      resultsArray.push('Boop!');
     } else {
       resultsArray.push(i);
-    };
-
+    }
+  };
+  console.log(resultsArray);
+};
 
 
 $(document).ready(function() {
@@ -17,7 +19,8 @@ $(document).ready(function() {
     event.preventDefault();
 
     var userNumber = parseInt($('input#userInputNumber').val());  // changes user input from a string to a number, assigns it to var userNumber
-    var userOutput = numberToOutput(userNumber);    // calls function on userNumber, assigns it to var userOutput
+    var userOutput = beepboop(userNumber);    // calls function on userNumber, assigns it to var userOutput
     $('#userResult').show();
-  });
+});
+
 });
