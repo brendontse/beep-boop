@@ -10,9 +10,9 @@ var beepboop = function(userInput) {
       resultsArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
     } else {
       resultsArray.push(i);
-    }
+    };
   };
-  console.log(resultsArray);
+  return resultsArray;
 };
 
 
@@ -22,7 +22,6 @@ $(document).ready(function() {
 
     var userNumber = parseInt($('input#userInputNumber').val()); // changes user input from a string to a number, assigns it to var userNumber
     var userOutput = beepboop(userNumber); // calls function on userNumber, assigns it to var userOutput
-    $('#userResult').show();
+    $('#userResult').text(userOutput);
   });
-
 });
