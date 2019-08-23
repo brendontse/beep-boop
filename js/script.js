@@ -4,11 +4,12 @@ var resultsArray = [];
 for (var i=0; i<=userInput; i++) {
     if (i.toString().includes("1")) {
       resultsArray.push("Beep!");
-    } else if {
-      
+
+    
+
     } else {
       resultsArray.push(i);
-    }
+    };
 
 
 
